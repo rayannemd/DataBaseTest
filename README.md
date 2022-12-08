@@ -188,9 +188,9 @@ select nome_curso from tb_curso order by nome_curso
 Selecione o nome e o curso dos alunos de sexo masculino que estão matriculados no curso de arquitetura.
 
 ```
-select nome_aluno, tb_curso.nome_curso as nome_curso from tb_aluno
-inner join tb_curso on tb_curso.nome_curso = 'ARQUITETURA'
-where sexo = 'M'
+select tb_aluno.nome_aluno, tb_curso.nome_curso from tb_aluno 
+inner join tb_matricula on tb_aluno.codigo_aluno = tb_matricula.codigo_aluno
+inner join tb_curso on tb_curso.codigo_curso = 1
 ```
 
 <img src='questoes/questao10.png'>
