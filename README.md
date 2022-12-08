@@ -112,7 +112,7 @@ inner join tb_curso on tb_curso.codigo_curso = tb_matricula.codigo_curso
 select email from tb_aluno where 2022 - ano_nascimento >= 18
 ```
 
-<img src='questao3.jpg'>
+<img src='questoes/questao3.png'>
 
 <h2> Question 4 </h2>
 <h4>Desenvolva um comando SQL que mostre o total de alunos.</h4>
@@ -137,7 +137,7 @@ add codigo_matricula serial primary key
 select count(codigo_matricula) as totalalunos from tb_matricula
 ```
 
-<img src='questao5.png'>
+<img src='questoes/questao5.png'>
 
 <h2> Question 6 </h2>
 <h4>Desenvolva um comando SQL que retorne o nome de todos os alunos maiores que
@@ -193,7 +193,7 @@ inner join tb_curso on tb_curso.nome_curso = 'ARQUITETURA'
 where sexo = 'M'
 ```
 
-<img src='questao10.png'>
+<img src='questoes/questao10.png'>
 
 <h1> Theoretical Questions </h1>
 
