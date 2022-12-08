@@ -129,7 +129,8 @@ select count(cod_aluno) as totalalunos from tb_aluno
 
 ```
 alter table tb_matricula
-add column codigo_matricula int primary key auto increment
+add codigo_matricula serial primary key 
+
 ```
 
 ```
