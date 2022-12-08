@@ -41,13 +41,13 @@ Creating the table 'tb_matricula'
 ```
 create table tb_matricula( 
 
-codigo_curso integer references tb_curso (codigo_curso), 
+codigo_curso integer, 
 
-codigo_aluno integer references tb_aluno (codigo_aluno) 
+codigo_aluno integer
 
 ) 
 
-alter table  
+alter table tb_matricula
 
 add constraint fk_codigo_curso foreign  key (codigo_curso) references tb_curso(codigo_curso) 
 
@@ -61,7 +61,7 @@ Inserting the data of the table 'tb_aluno'
 ```
 insert into tb_aluno (codigo_aluno, nome_aluno, ano_nascimento, email, sexo) 
 
-values (3, 'João Pedro', '1979', 'joao@provasql.com.br', 'M') 
+values (3, 'João Pedro', 1979, 'joao@provasql.com.br', 'M') 
 ```
 Inserting the data of the table 'tb_curso'
 ```
@@ -118,14 +118,14 @@ select email from tb_aluno where 2022 - ano_nascimento >= 18
 <h4>Desenvolva um comando SQL que mostre o total de alunos.</h4>
 
 ```
-select count(cod_aluno) as totalalunos from tb_aluno
+select count(cod_aluno) as total_alunos from tb_aluno
 ```
 
 <img src='questao4.png'>
 
 
 <h2> Question 5 </h2>
-<h4>Desenvolva um comando SQL que mostre o total de alunos.</h4>
+<h4>Escreva um comando SQL para listar o total de alunos matriculador em cada curso.</h4>
 
 ```
 alter table tb_matricula
@@ -134,7 +134,7 @@ add codigo_matricula serial primary key
 ```
 
 ```
-select count(codigo_matricula) as totalalunos from tb_matricula
+select count(codigo_matricula) as total_alunos from tb_matricula group by codigo_curso
 ```
 
 <img src='questoes/questao5.png'>
