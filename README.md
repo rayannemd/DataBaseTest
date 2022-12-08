@@ -88,6 +88,7 @@ insert into tb_matricula (codigo_curso, codigo_aluno) values (4, 4)
 
 select * from tb_matricula
 ```
+
 <img src='questao1.png'>
 
 
@@ -100,12 +101,18 @@ select tb_aluno.nome_aluno, tb_curso.nome_curso from tb_aluno
 inner join tb_matricula on tb_aluno.codigo_aluno = tb_matricula.codigo_aluno
 inner join tb_curso on tb_curso.codigo_curso = tb_matricula.codigo_curso
 ```
+
+<img src='questao2.png'>
+
+
 <h2> Question 3 </h2>
 <h4>Crie um comando SQL que retorne o e-mail de todos os alunos maiores de idade.</h4>
 
 ```
 select email from tb_aluno where 2022 - ano_nascimento >= 18
 ```
+
+<img src='questao3.png'>
 
 <h2> Question 4 </h2>
 <h4>Desenvolva um comando SQL que mostre o total de alunos.</h4>
@@ -114,6 +121,9 @@ select email from tb_aluno where 2022 - ano_nascimento >= 18
 select count(cod_aluno) as totalalunos from tb_aluno
 ```
 
+<img src='questao4.png'>
+
+
 <h2> Question 5 </h2>
 <h4>Desenvolva um comando SQL que mostre o total de alunos.</h4>
 
@@ -121,6 +131,9 @@ select count(cod_aluno) as totalalunos from tb_aluno
 alter table tb_matricula
 add column codigo_matricula int primary key on update cascade
 ```
+
+<img src='questao5.png'>
+
 
 ```
 select count(codigo_matricula) from tb_matricula
@@ -134,12 +147,18 @@ select count(codigo_matricula) from tb_matricula
 select nome_aluno from tb_aluno where 2022 - ano_nascimento >= 18
 ```
 
+<img src='questao6.png'>
+
+
 <h2> Question 7 </h2>
 <h4>Faça um comando SQL que retorne o nome de todas as mulheres.</h4>
 
 ```
 select nome_aluno from tb_aluno where sexo = 'F'
 ```
+
+<img src='questao7.png'>
+
 
 <h2> Question 8 </h2>
 <h4>Faça um comando SQL que retorne o nome de todas as mulheres matriculadas
@@ -151,6 +170,8 @@ inner join tb_curso on tb_curso.nome_curso = 'MEDICINA'
 where sexo = 'F' 
 ```
 
+<img src='questao8.png'>
+
 <h2> Question 9 </h2>
 <h4>Faça um comando SQL que retorne os nomes dos cursos ordenados por ordem
 alfabética.</h4>
@@ -158,6 +179,9 @@ alfabética.</h4>
 ```
 select nome_curso from tb_curso order by nome_curso
 ```
+
+<img src='questao9.png'>
+
 
 <h2> Question 10 </h2>
 <h4>Crie o enunciado de uma consulta SQL que utilize “junção” (com resposta).</h4>
@@ -171,6 +195,8 @@ on tb_curso.nome_curso = 'ARQUITETURA'
 where sexo = 'M'
 ```
 
+<img src='questao10.png'>
+
 <h1> Theoretical Questions </h1>
 
 <h2> Question 1 </h2>
@@ -179,7 +205,7 @@ where sexo = 'M'
   É uma linguagem fundamental para qualquer profissional que trabalhe com dados, sendo ainda mais usada do que Python e R. E que, devido a sua simplicidade, não é necessário ser um programador para aprendê-la. Com isso, cada vez mais áreas têm sido exigido o conhecimento em SQL como complementar em tarefas cotidianas.
 
 <h2> Question 2 </h2>
-<img src=>
+<img src=timelinesql.png>
 
 <h2> Question 3 </h2>
   Trata-se de uma linguagem com palavras-chave em inglês, e formato livre (com relação à identificação, quebra de linhas, etc.) e livremente baseada na Teoria dos Conjuntos, isto é, as tabelas onde constam as informações são tratadas como conjuntos, onde são aplicadas operações de intercessão, união, seleção, etc. 
