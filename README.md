@@ -132,12 +132,11 @@ alter table tb_matricula
 add column codigo_matricula int primary key on update cascade
 ```
 
-<img src='questao5.png'>
-
-
 ```
 select count(codigo_matricula) from tb_matricula
 ```
+
+<img src='questao5.png'>
 
 <h2> Question 6 </h2>
 <h4>Desenvolva um comando SQL que retorne o nome de todos os alunos maiores que
@@ -188,10 +187,8 @@ select nome_curso from tb_curso order by nome_curso
 Selecione o nome e o curso dos alunos de sexo masculino que estão matriculados no curso de arquitetura.
 
 ```
-select nome_aluno, tb_curso.nome_curso as nome_curso
-from tb_aluno
-inner join tb_curso
-on tb_curso.nome_curso = 'ARQUITETURA'
+select nome_aluno, tb_curso.nome_curso as nome_curso from tb_aluno
+inner join tb_curso on tb_curso.nome_curso = 'ARQUITETURA'
 where sexo = 'M'
 ```
 
