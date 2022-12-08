@@ -193,7 +193,7 @@ inner join tb_matricula on tb_aluno.codigo_aluno = tb_matricula.codigo_aluno
 inner join tb_curso on tb_curso.codigo_curso = 1
 ```
 
-<img src='questoes/questao10.png'>
+<img src='questao10.png'>
 
 <h1> Theoretical Questions </h1>
 
