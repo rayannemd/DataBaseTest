@@ -137,7 +137,7 @@ add codigo_matricula serial primary key
 select count(codigo_matricula) as total_alunos from tb_matricula group by codigo_curso
 ```
 
-<img src='questoes/questao5.png'>
+<img src='questao5.png'>
 
 <h2> Question 6 </h2>
 <h4>Desenvolva um comando SQL que retorne o nome de todos os alunos maiores que
