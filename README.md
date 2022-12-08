@@ -138,6 +138,7 @@ select count(codigo_matricula) as total_alunos from tb_matricula group by codigo
 ```
 
 <img src='questao5.png'>
+Nota: Não consegui fazer com que mostrasse o nome dos cursos no canto superior esquerdo. Todavia, 1= 'MEDICINA', 2= 'ARQUITETURA' e 3= 'INFORMATICA'. Filosofia não aparece por não conter nenhum insert em sua coluna.
 
 <h2> Question 6 </h2>
 <h4>Desenvolva um comando SQL que retorne o nome de todos os alunos maiores que
