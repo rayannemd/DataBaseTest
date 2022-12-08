@@ -129,11 +129,11 @@ select count(cod_aluno) as totalalunos from tb_aluno
 
 ```
 alter table tb_matricula
-add column codigo_matricula int primary key on update cascade
+add column codigo_matricula int primary key auto increment
 ```
 
 ```
-select count(codigo_matricula) from tb_matricula
+select count(codigo_matricula) as totalalunos from tb_matricula
 ```
 
 <img src='questao5.png'>
