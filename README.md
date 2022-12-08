@@ -112,7 +112,7 @@ inner join tb_curso on tb_curso.codigo_curso = tb_matricula.codigo_curso
 select email from tb_aluno where 2022 - ano_nascimento >= 18
 ```
 
-<img src='questao3.png'>
+<img src='questao3.jpg'>
 
 <h2> Question 4 </h2>
 <h4>Desenvolva um comando SQL que mostre o total de alunos.</h4>
