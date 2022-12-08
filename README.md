@@ -203,6 +203,7 @@ inner join tb_curso on tb_curso.codigo_curso = 1
   É uma linguagem fundamental para qualquer profissional que trabalhe com dados, sendo ainda mais usada do que Python e R. E que, devido a sua simplicidade, não é necessário ser um programador para aprendê-la. Com isso, cada vez mais áreas têm sido exigido o conhecimento em SQL como complementar em tarefas cotidianas.
 
 <h2> Question 2 </h2>
+Mind map about the history of SQL.
 <img src=timelinesql.png>
 
 <h2> Question 3 </h2>
