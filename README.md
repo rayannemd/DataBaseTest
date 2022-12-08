@@ -88,6 +88,9 @@ insert into tb_matricula (codigo_curso, codigo_aluno) values (4, 4)
 
 select * from tb_matricula
 ```
+<img src='questao1.png'>
+
+
 <h2> Question 2 </h2>
 <h4>Escreva um comando SQL que retorne os nomes dos alunos e do(s) cursos em
 que estão matriculados. Os dados deverão estar ordenados pelo nome do curso.</h4>
